@@ -10,4 +10,5 @@ datasets/
 models/*.pt
 models/*.onnx
 models/*.engine
+data/shapes-mini/images/.cache
 

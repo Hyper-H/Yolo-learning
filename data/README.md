@@ -18,3 +18,7 @@ For YOLO training, the most important file is usually a dataset YAML file that d
 - class count
 - class names
 
+This repo already includes a ready-to-use sample dataset:
+
+- `data/shapes-mini/`
+- config file: `data/shapes-mini.yaml`

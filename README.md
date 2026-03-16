@@ -21,7 +21,9 @@ This repository is designed as a study workspace, not just a code dump. It combi
 2. Read [docs/02_yolov8_usage.md](docs/02_yolov8_usage.md)
 3. Read [docs/03_interview_qa.md](docs/03_interview_qa.md)
 4. Follow [docs/04_study_roadmap.md](docs/04_study_roadmap.md)
-5. Run the scripts in `scripts/`
+5. Read [docs/05_graduate_interview_answer_sheet.md](docs/05_graduate_interview_answer_sheet.md)
+6. Read [docs/06_quick_start_with_mini_dataset.md](docs/06_quick_start_with_mini_dataset.md)
+7. Run the scripts in `scripts/`
 
 ## Project Structure
 
@@ -30,6 +32,7 @@ This repository is designed as a study workspace, not just a code dump. It combi
 ├── docs/
 ├── scripts/
 ├── data/
+│   └── shapes-mini/
 ├── models/
 ├── experiments/
 ├── requirements.txt
@@ -80,6 +83,12 @@ py -3 scripts/validate_model.py --model yolov8n.pt --data coco8.yaml
 py -3 scripts/train_custom.py --data path/to/data.yaml
 ```
 
+### 5. Train immediately on the built-in mini dataset
+
+```bash
+py -3 scripts/train_shapes_demo.py
+```
+
 ## What You Should Be Able To Explain In An Interview
 
 After working through this repo, you should be able to explain:
@@ -90,6 +99,7 @@ After working through this repo, you should be able to explain:
 - the role of NMS, IoU, confidence score, and mAP
 - why YOLOv8 is anchor-free and why that matters
 - how to fine-tune YOLO on a custom dataset
+- how to explain a small end-to-end YOLO project in an interview
 
 ## Practical Advice For Interview Prep
 
@@ -98,4 +108,3 @@ After working through this repo, you should be able to explain:
   image -> backbone -> neck -> detection head -> NMS -> final boxes
 - Be ready to compare YOLO with Faster R-CNN and SSD.
 - Be ready to explain one real project idea using YOLO.
-
